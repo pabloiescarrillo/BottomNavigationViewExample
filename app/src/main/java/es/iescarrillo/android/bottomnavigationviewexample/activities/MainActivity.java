@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         // Indicar que la barra de acción contenga el botón de hamburguesa
         setSupportActionBar(appToolbar);
 
+        // Habilita el botón de hamburguesa
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu); // Icono de hamburguesa
+        }
+
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(
                 this,
                 drawerLayout,

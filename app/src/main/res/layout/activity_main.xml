@@ -20,6 +20,7 @@
         android:layout_height="match_parent"
         app:headerLayout="@layout/header_nav"
         app:menu="@menu/lateral_navigation_menu"
+        android:layout_marginTop="?actionBarSize"
         />
 
 
